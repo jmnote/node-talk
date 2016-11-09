@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+<title>node-talk</title>
+<link rel="stylesheet" href="main.css">
+<script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5-min.js'></script>
+<script src="//rawgit.com/stewartlord/identicon.js/master/pnglib.js"></script>
+<script src="//rawgit.com/stewartlord/identicon.js/master/identicon.js"></script>
+<script src='//cdn.rawgit.com/zenozeng/color-hash/master/dist/color-hash.js'></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			이름 <input id="username"/>
+		</div>
+
+		<div id='chat'></div>
+		
+		<div id="footer">
+			<div class="row">
+				<form id="send-form">
+					<input id="content" autocomplete="off" />
+					<button id='send-btn' type='submit' style='float:right'>보내기</button>
+				</form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

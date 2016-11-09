@@ -1,0 +1,34 @@
+{
+  "name": "node-talk",
+  "version": "1.0.0",
+  "description": "node-talk by jmnote",
+  "keywords": [
+    "chat",
+    "talk",
+    "socket.io",
+    "node.js"
+  ],
+  "author": "jmnote",
+  "license": "ISC",
+  "dependencies": {
+    "express": "3.4.8",
+    "socket.io": "^1.5.0"
+  },
+  "engines": {
+    "node": "0.12.16",
+    "npm": "2.7.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmnote/node-talk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmnote/node-talk/issues"
+  },
+  "homepage": "https://github.com/jmnote/node-talk#readme"
+}

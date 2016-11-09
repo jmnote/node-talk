@@ -1,0 +1,9 @@
+---
+applications:
+- name: node-talk
+  memory: 32M
+  command: node server.js
+  # host: talk
+  random-route: true
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+

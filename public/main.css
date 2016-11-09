@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+html, body {
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+	width: .9em;
+	height: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+	height: 1em;
+	border: .3em solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	background-color: rgba(0, 0, 0, 0.15);
+	border-radius: 1em;
+}
+
+::-webkit-scrollbar-button {
+	display: none;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+#container {
+	background: #9bbbd4;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#header {
+	background: #93b1cd;
+	box-shadow: .1em .1em .05em rgba(0,0,0,.1);
+}
+#header input {
+	border: 0;
+	margin-right: .5%;
+	padding: .5em;
+	width: 30%;
+}
+#footer {
+	overflow: auto;
+}
+#footer .row {
+	margin: .15em 1em 1em 1em;
+}
+#footer input {
+	width: calc(100% - 5em);
+	border: 0;
+	height: 2.5em;
+	padding-left: .8em;
+	border-radius: .3em 0 0 .3em;
+	outline: none;
+}
+#footer button {
+	border: 0;
+	width: 5em;
+	height: 2.5em;
+	background: #fef01b;
+	border-radius: 0 .3em .3em 0;
+	outline: none;
+	cursor: pointer;
+}
+#footer button:hover {
+	background: #fae810;
+}
+#chat {
+	flex: 1;
+	overflow-y: scroll;
+}
+#chat span {
+	padding: .4em .5em;
+	border-radius: .2em;
+}
+.message {
+	margin: 1.15em .1em 1em .8em;
+}
+.text-box {
+	margin: 0 3.4em;
+}
+.username-box {
+	margin: .6em .3em;
+}
+.photo {
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+}
+.lavatar {
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	font-size: 1.5em;
+	text-align: center;
+	color: #fff;
+}
+
+.sender-hidden .avatar-box,
+.sender-hidden .username-box {
+	display: none;
+}
+.mine {
+	text-align: right;
+}
+.mine .avatar-box {
+	float: right;
+}
+.mine span {
+	background: #fef01b;
+}
+
+.others span {
+	background: #fff;
+}
+.others .avatar-box {
+	float: left;
+}
+
+@media(min-width:700px){
+	* {
+		zoom: 102%;
+	}
+	.text-box {
+		margin: 0 3.8em;
+	}
+	.message {
+		margin: 1.2em .1em 1em .8em;
+	}
+	.lavatar {
+		font-size: 1.6em;
+	}
+}
