@@ -15,7 +15,7 @@
     "socket.io": "^1.5.0"
   },
   "engines": {
-    "node": "0.12.16",
+    "node": "0.12.17",
     "npm": "2.7.4"
   },
   "main": "index.js",
