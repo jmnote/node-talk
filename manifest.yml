@@ -5,5 +5,5 @@ applications:
   command: node server.js
   # host: talk
   random-route: true
-  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack#v1.6.8
 
